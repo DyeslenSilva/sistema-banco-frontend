@@ -1,7 +1,20 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css';
+import Link from "next/link";
 
 export default function Home() {
+  const router = useRouter();
+
+  const handlerClick = (e, path) =>{
+    if(path === "/login"){
+      console.log("Pagina de Login")
+    }
+    if(path === "/error"){
+      console.log("Erro")
+    }
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -11,7 +24,7 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Bem vindo ao nosso site
         </h1>
 
         <p className={styles.description}>
@@ -19,14 +32,16 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <Link legacyBehavior href="/login">
+          <a  className={styles.card}>
+            <h3>Login &rarr;</h3>
+            <p>Acesse sua conta corrente utilizando suas credenciais de login</p>
           </a>
+          </Link>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="/cadastro" className={styles.card}>
+            <h3>Cadastro &rarr;</h3>
+            <p>Faça seu cadastro em nosso site e facilite o processo de abertura de conta</p>
           </a>
 
           <a
@@ -86,7 +101,7 @@ export default function Home() {
           align-items: center;
           text-decoration: none;
           color: inherit;
-        }
+        } 
         code {
           background: #fafafa;
           border-radius: 5px;
