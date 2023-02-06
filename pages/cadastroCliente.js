@@ -5,7 +5,7 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 export default function CadastroCliente(){
     return(
         <MDBContainer>
-        <div>
+        <div class="container">
     <MDBRow>
         <MDBCard className="bg-info text-black my-5 mx-auto" style={{borderRadius: '2rem' ,maxWidth: '400px'}}>
             <MDBCardBody className="p-5 d-flex flex-column align-items-center mx-auto w-100">
@@ -26,7 +26,9 @@ export default function CadastroCliente(){
             </MDBCardBody>
         </MDBCard>
     </MDBRow>
-
+</div>
+    
+    <div class="container">
     <MDBRow>
         <MDBCard className="bg-info text-black my-5 mx-auto" style={{borderRadius: '2rem', maxWidth:'350px'}}>
             <MDBCardBody className="p-5 d-flex flex-column align-items-center mx-auto w-100">
