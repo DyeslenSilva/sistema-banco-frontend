@@ -3,14 +3,15 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 export default function CadastroCliente (){
     return (
-    <MDBCard class="d-flex justify-content-center text-black my-5 mx-auto">
         
-        <h4>Cadastro de Cliente Pessoa Fisica</h4>
+    <MDBCard class="d-flex justify-content-center text-black my-5 mx-auto">
 
-        <div class="container">
+        <h3>Cadastro de Pessoa Fisica</h3>
+
+        <div class="">
             <form>
                 <div class="d-flex form-outline mb-5 justify-content-center text-black my-5 mx-auto">
-                    <input type="text" id="form" class="form-control justify-content-center"/>
+                    <input type="text" id="form" class="form-control justify-content-center mr-sm-3"/>
                     <label class="form-label">Nome</label>
                 </div>
                 <div class="d-flex form-outline mb-5 justify-content-center text-black my-5 mx-auto">
@@ -41,7 +42,7 @@ export default function CadastroCliente (){
                     <input text="text" id="form" class="form-control justify-content-center"/>
                     <label class="form-label">Estado</label>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block mb-4">Cadastrar</button>
+                <button type="submit" class="btn btn-primary btn-md mt-0">Cadastrar</button>
             </form>
         </div>
 

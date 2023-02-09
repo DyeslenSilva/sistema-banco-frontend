@@ -6,12 +6,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.4.9",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@next-ui/next-ui": "^0.1.0-pre.1",
+    "@nextui-org/react": "^1.0.0-beta.12",
     "bootstrap": "^5.2.3",
+    "framer-motion": "^9.0.2",
     "mdb-react-ui-kit": "^5.1.0",
     "mdbootstrap": "^4.20.0",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-next-ui": "^2.0.0",
     "sas": "^3.0.4",
     "sass": "^1.58.0"
   },

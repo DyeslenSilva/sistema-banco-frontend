@@ -1,27 +1,38 @@
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import { MDBCard } from 'mdb-react-ui-kit';
+import Link from 'next/link';
 export default function Login2(){
     return(
         <div class="container">
         <div><ul class="nav nav-pills nav-justified mb-3" id="log1" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active"
+                <Link class="nav-link active"
                 id="tab-login"
                 data-mdb-toggle="pill"
-                href="#pills-login"
+                href="/login2"
                 role="tab"
                 aria-controls="pills-login"
-                aria-selected="true">Login</a>
+                aria-selected="true">Login</Link>
             </li>
 
             <li class="nav-item" role="presentation">
-                <a class="nav-link"
+                <Link class="nav-link"
                 id="tab-register"
                 data-mdb-toggle="pill"
-                href="#pills-register"
+                href="/clienteCadastroPF"
                 role="tab"
                 aria-controls="pills-register"
-                aria-selected="true">Register</a>
+                aria-selected="true">Cadastro PF</Link>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <Link class="nav-link"
+                id="tab-registerpj"
+                data-mdb-toggle="pill"
+                href="/cadastroClientePJ"
+                role="tab"
+                aria-controls="pills-register"
+                aria-selected="true">Cadastro PJ</Link>
             </li>
         </ul>
         </div>

@@ -1,11 +1,12 @@
-import { MDBCard, MDBContainer, MDBNavbarBrand, MDBNavbar } from "mdb-react-ui-kit"
+import { MDBCard, MDBContainer, MDBNavbarBrand, MDBNavbar, MDBNavbarToggler, MDBInputGroup,MDBButton } from "mdb-react-ui-kit"
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
-export default function CadastroPJ(){
+export default function  CadastroPJ(){
     return(
         <><MDBNavbar light bgColor="light" >
             <MDBContainer fluid>
-                <MDBNavbarBrand href="login2.js">Login</MDBNavbarBrand>
+                <MDBNavbarBrand href="/login2">Login</MDBNavbarBrand>
+              
             </MDBContainer>
         </MDBNavbar>
         
@@ -15,7 +16,7 @@ export default function CadastroPJ(){
 
             <div>
                 <form>
-                    <div class="d-flex form-outline mb-5 justify-content-center text-black my-5 mx-auto">
+                    <div class="d-flex form-outline mb-5 justify-content-center text-black my-5 mx-auto border-success">
                         <input type="text" id="form" class="form-control justify-content-center" />
                         <label class="form-label">Razao Social</label>
                     </div>
@@ -39,7 +40,7 @@ export default function CadastroPJ(){
                         <input type="text" id="form" class="form-control justify-control-center" />
                         <label class="form-label">Estado</label>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block mb-4">Cadastrar Entidade</button>
+                    <button type="submit" class="btn btn-primary btn-md mt-0">Cadastrar Entidade</button>
                 </form>
             </div>
         </MDBCard></>

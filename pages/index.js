@@ -39,10 +39,10 @@ export default function Home() {
           </a>
           </Link>
 
-          <a href="/cadastro" className={styles.card}>
+          <Link href="/cadastro" className={styles.card}>
             <h3>Cadastro &rarr;</h3>
             <p>Faça seu cadastro em nosso site e facilite o processo de abertura de conta</p>
-          </a>
+          </Link>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
